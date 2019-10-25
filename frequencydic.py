@@ -70,7 +70,7 @@ def computeKeyPairs(char_list):
             if c0 != c1:
                 lst.append((c0, c1))
 
-    print(lst)
+    return lst
 
 computeKeyPairs([1,2,3,4])
 #computeMostFrequentChars(computeFrequencyTable(text_in_list("Lukas hat kein Waffeleisen. Jannik hat auch kein Waffeleisen. Und Josepf hat leider keinen Penis. Tim ist ein Bastard und Vincent eigentlich im vierten Semester und gleichzeitig auch im ersten. Ich mag Sascha. Viel Spaß den prozentualen Anteil jedes Buchstabens her zu prüfen. Mehr Text. Ich brauche noch einen piraten in meiner Story. Joo, sagt der Pirat! Ich mag Shakespear und Vincent aus m Vierten. ")), 10)
