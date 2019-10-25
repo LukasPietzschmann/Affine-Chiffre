@@ -1,5 +1,3 @@
-import collections
-
 #########################################
 #-------------aufg11----------------------
 
@@ -39,9 +37,7 @@ def computeMostFrequentChars(freq_table, n):
 
     for i in range(len(map)-1, len(map)-n-1, -1):
         freq_list.append(list(map.keys())[i])
-        #:w
-        # :q
-        # print(chr(list(map.keys())[i]))
+        #print(chr(list(map.keys())[i]))
 
     return freq_list
 
@@ -64,5 +60,18 @@ def text_in_list(string):
 
     return lst
 
-computeMostFrequentChars(computeFrequencyTable(text_in_list("Lukas hat kein Waffeleisen. Jannik hat auch kein Waffeleisen. Und Josepf hat leider keinen Penis. Tim ist ein Bastard und Vincent eigentlich im vierten Semester und gleichzeitig auch im ersten. Ich mag Sascha. Viel Spaß den prozentualen Anteil jedes Buchstabens her zu prüfen. Mehr Text. Ich brauche noch einen piraten in meiner Story. Joo, sagt der Pirat! Ich mag Shakespear und Vincent aus m Vierten. ")), 10)
+
+#########################################
+#-------------aufg14----------------------
+def computeKeyPairs(char_list):
+    lst = []
+    for c0 in char_list:
+        for c1 in char_list:
+            if c0 != c1:
+                lst.append((c0, c1))
+
+    print(lst)
+
+computeKeyPairs([1,2,3,4])
+#computeMostFrequentChars(computeFrequencyTable(text_in_list("Lukas hat kein Waffeleisen. Jannik hat auch kein Waffeleisen. Und Josepf hat leider keinen Penis. Tim ist ein Bastard und Vincent eigentlich im vierten Semester und gleichzeitig auch im ersten. Ich mag Sascha. Viel Spaß den prozentualen Anteil jedes Buchstabens her zu prüfen. Mehr Text. Ich brauche noch einen piraten in meiner Story. Joo, sagt der Pirat! Ich mag Shakespear und Vincent aus m Vierten. ")), 10)
 #computeMostFrequentChars(computeFrequencyTable([4, 8, 13, 11, 0, 13, 6, 4, 17, 19, 4, 23, 19, 14, 7, 13, 4, 18, 18, 8, 13, 13]), 8)
